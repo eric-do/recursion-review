@@ -11,12 +11,12 @@ var getElementsByClassName = function(className
   
   var recursiveSearch = function(node) {
     // recursively call function if there are children 
-    if (node.classList){
-      if (node.classList.contains(className)){
+    if (node.classList) {
+      if (node.classList.contains(className)) {
         arr.push(node);
       } 
     }
-    if (node.childNodes){
+    if (node.childNodes) {
       for (let i = 0; i < node.childNodes.length; i++) {
         recursiveSearch(node.childNodes[i]);
       }
