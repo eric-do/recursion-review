@@ -34,7 +34,7 @@ var stringifyJSON = function(obj) {
     
     for (var i = 0; i < obj.length; i++) {
       arr.push(stringifyJSON(obj[i]));
-    };
+    }
     
     return '[' + arr.join(',') + ']';
     
